@@ -8,7 +8,7 @@ USE_ACTIVEMQ = 0
 # Compiler options
 CC          := g++
 CPP_FLAGS   := -g -Wall -Wextra -Wno-deprecated-declarations -D _DEFAULT_SOURCE
-CPP_LIB 	:= -lpthread
+CPP_LIB 	:= -lpthread -lsctp
 CPP_INC     := -I./src/common
 UTEST_LIB 	:= -lCppUTest -lCppUTestExt
 FLAGS 		:= $(CPP_FLAGS) $(CPP_LIB) $(CPP_INC)

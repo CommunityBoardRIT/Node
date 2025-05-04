@@ -44,8 +44,10 @@ int8_t DATA_S_List_deinit (S_List *list)
 
 int8_t DATA_S_List_append (S_List *list, S_List_Node *node)
 {
-    if (!list) STD_FAIL;
-    if (node->next) STD_FAIL;
+    if (!list)
+        STD_FAIL;
+    if (node->next)
+        STD_FAIL;
 
     if (list->len == 0) list->head = node;
     else list->tail->next = node;
